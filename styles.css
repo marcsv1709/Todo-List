@@ -1,0 +1,113 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.todo-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #00509e;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    padding: 12px;
+    width: 80%;
+    border: 2px solid #00509e;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #0073e6;
+}
+
+button {
+    padding: 12px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 15%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #00509e;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    background-color: #f7fbff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s;
+}
+
+li.completed {
+    background-color: #d1e7ff;
+    text-decoration: line-through;
+    color: gray;
+}
+
+li div {
+    display: flex;
+    gap: 10px;
+}
+
+li button {
+    background-color: #00509e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    width: 80px;
+}
+
+li button:hover {
+    background-color: #003f7f;
+}
+
+li.completed button {
+    background-color: #28a745;
+}
+
+li.completed button:hover {
+    background-color: #218838;
+}
